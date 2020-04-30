@@ -13,10 +13,10 @@ path  = "C:\Program Files (x86)\chromedriver.exe"
 
 #driver setup
 driver = webdriver.Chrome(path)
-
-
 driver.get("https:web.whatsapp.com")
+
 time.sleep(15)
+
 user_search = driver.find_element_by_xpath("/html/body/div[1]/div/div/div[3]/div/div[1]/div/label/div/div[2]")
 user_search.click()
 user_search.send_keys(user)
